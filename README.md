@@ -1,27 +1,59 @@
-# React + TypeScript + Vite
+# Vendix App - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Vendix App is an application built with Vite, React, and TypeScript. 
 
-Currently, two official plugins are available:
+## Tech Stack
+- Vite
+- React
+- TypeScript
+- Custom API Manager: A custom API manager to handle backend interactions.
+- Custom Hooks: Utilizes custom hooks to manage data and states.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Roadmap
+- Fix backend connection to retrieve data.
+- Add unit test to hooks & services with Jest & React testing library
+- Add ui tests
+- Build a responsive interface
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone this repo:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+   ```bash
+   git clone https://github.com/your-username/vendix-frontend.git
+   ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Navigate to the project directory:
+
+   ```bash
+   cd vendix-frontend
+   ```
+
+3. Install the project dependencies:
+
+   ```bash
+   npm install 
+   or
+   yarn
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and visit [http://localhost:5173](http://localhost:5173) to view the Vendix App.
+
+## Custom Hooks
+
+The Vendix App frontend uses custom hooks for managing API requests and state. These hooks simplify data fetching and state management, making it easy to integrate with the Vendix API.
+
+## Feedback
+
+If you have ideas, bug reports, or feature requests, please open an issue or create a pull request. I appreciate your feedback.
+
+## Author
+
+Betita 🚀
