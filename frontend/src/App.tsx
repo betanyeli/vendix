@@ -14,17 +14,30 @@ function App() {
   if (error) <p> Error...</p>
   return (
     <>
-      <h1>Vendix.de</h1>
-      <div style={{ display: 'flex', justifyContent: "space-between" }}>
+      <header>
+        <div className='header-container'>
+          <h2>Vendix.de</h2>
+        </div>
+
+      </header>
+
+      <img width={200} style={{ marginTop: 50 }} src='https://betanyeli-images.s3.amazonaws.com/vending-machine-svgrepo-com+1+(1).png' />
+      <div className='root-container'>
+
         <button>
-          Create
+          Get all products
         </button>
         <button onClick={() => getProductById(productId)}>
-          Search
+          Get product
         </button>
         <button>
-          Update
+          Update product
         </button>
+
+        <button>
+          Create product
+        </button>
+
 
       </div>
       <a>

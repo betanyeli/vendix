@@ -8,3 +8,16 @@
 button {
   margin: 24;
 }
+
+.header-container {
+  padding: 8;
+  display: "flex";
+  justify-content: "space-between";
+  flex-direction: "row";
+}
+
+.root-container {
+  display: "flex";
+  align-items: "center";
+  margin-top: 40;
+}

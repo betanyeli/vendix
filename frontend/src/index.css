@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto:wght@100;400;700&display=swap");
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -12,6 +13,24 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  header {
+    font-size: 18px;
+  }
 }
 
 a {
@@ -49,6 +68,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
   margin: 0.5em;
+  min-width: 200px;
 }
 button:hover {
   border-color: #646cff;

@@ -28,7 +28,6 @@ const ApiManager = {
         },
       });
 
-      console.log("aki", response);
       if (!response.ok) {
         throw new Error(`Product with ID ${id} not found`);
       }
